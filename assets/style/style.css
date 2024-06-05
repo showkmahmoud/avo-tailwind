@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* common classes */
+.main-btn {
+  @apply rounded-main-BR border-main-BC border-main-BW inline-block px-4 py-2 bg-main-color text-white hover:bg-main-color-hover cursor-pointer;
+}
+/* /common classes */
+/* NavBar */
+.nav-items {
+  @apply md:flex flex-col md:flex-row items-center md:space-x-7 divide-y divide-solid md:divide-none justify-center bg-white absolute top-50 left-0 md:relative md:top-0 border-t border-b md:border-0;
+}
+.nav-item {
+  @apply text-headers-color hover:text-main-color uppercase border-gray-100 bottom-1;
+}
+/* NavBar */
