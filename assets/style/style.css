@@ -3,15 +3,31 @@
 @tailwind utilities;
 
 /* common classes */
+section {
+  padding-top: 80px;
+}
 .main-btn {
   @apply rounded-main-BR border-main-BC border-main-BW inline-block px-4 py-2 bg-main-color text-white hover:bg-main-color-hover cursor-pointer;
 }
 /* /common classes */
 /* NavBar */
 .nav-items {
-  @apply md:flex flex-col md:flex-row items-center md:space-x-7 divide-y divide-solid md:divide-none justify-center bg-white absolute top-50 left-0 md:relative md:top-0 border-t border-b md:border-0;
+  @apply md:flex flex-col md:flex-row items-center md:space-x-7 divide-y divide-solid md:divide-none justify-center absolute top-50 left-0 md:relative md:top-0 border-t border-b md:border-0;
 }
 .nav-item {
-  @apply text-headers-color hover:text-main-color uppercase border-gray-100 bottom-1;
+  @apply text-headers-color hover:text-main-color uppercase border-gray-100  bottom-1;
 }
 /* NavBar */
+/* hero-section */
+.hero-section {
+  background: url("../imgs/bg_1.jpg.png");
+  height: 100vh;
+}
+.overlay {
+  @apply absolute top-0 bottom-0 w-full opacity-50 z-0 bg-black;
+}
+.text-container {
+  top: 16rem;
+  left: 10%;
+}
+/* /hero-section */
